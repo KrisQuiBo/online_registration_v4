@@ -1,1 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans" rel="stylesheet">
+    <title>The Code Review</title>
+  </head>
+  <body>
 
+      <h1>The Code Review</h1>
+      <h2>Signup for our newsletter</h2>
+      <p class="intro">Get the latest news on how your code is doing right in your inbox</p>
+      <hr class="hrOne">
+      <hr class="hrTwo">
+
+    <form action="index.html" method="post">
+      <fieldset>
+        <legend>Contact Information</legend>
+        <ul>
+            <li>
+              <label for "name">Full Name</label>
+              <input type="text" id="name" name="user_name" placeholder="Required" required>
+            </li>
+            <li>
+              <label for "email">Email Address</label>
+              <input type="text" id="email" name="user_email" placeholder="Required" required>
+            </li>
+            <li>
+              <label for "phone">Phone Number</label>
+              <input type="tel" id="phone" name="user_phone" placeholder="Just in case">
+            </li>
+            <li>
+              <label for "street">Street Address</label>
+              <input type="text" id="street" name="user_street" placeholder="For our holiday card list">
+            </li>
+            <li>
+              <label for "city">City</label>
+              <input type="text" id="city" name="user_city" placeholder="Get connected with nearby fellow developers">
+            </li>
+            <li>
+              <label for "state">State</label>
+              <select id="state" name="user_state">
+                <optgroup label="A">
+                <option value="Alabama">Alabama</option>
+                <option value="Alaska">Alaska</option>
+                <option value="Arizona">Arizona</option>
+                <option value="Arkansas">Arkansas</option>
+              </optgroup>
+              <optgroup label="C">
+                <option value="California">California</option>
+                <option value="Colorado">Colorado</option>
+                <option value="Connecticut">Connecticut</option>
+              </optgroup>
+              <optgroup label="D">
+                <option value="Delaware">Delaware</option>
+              </optgroup>
+                <optgroup label="F">
+                <option value="Florida">Florida</option>
+              </optgroup>
+                  <optgroup label="G">
+                <option value="Georgia">Georgia</option>
+              </optgroup>
+                  <optgroup label="H">
+                <option value="Hawaii">Hawaii</option>
+              </optgroup>
+                  <optgroup label="I">
+                <option value="Idaho">Idaho</option>
+                <option value="Illinois">Illinois</option>
+                <option value="Indiana">Indiana</option>
+                <option value="Iowa">Iowa</option>
+              </optgroup>
+                <optgroup label="K">
+                <option value="Kansas">Kansas</option>
+                <option value="Kentucky">Kentucky</option>
+              </optgroup>
+                <optgroup label="L">
+                <option value="Louisiana">Louisiana</option>
+              </optgroup>
+                <optgroup label="M">
+                <option value="Maine">Maine</option>
+                <option value="Maryland">Maryland</option>
+                <option value="Massachusetts">Massachusetts</option>
+                <option value="Michigan">Michigan</option>
+                <option value="Minnesota">Minnesota</option>
+                <option value="Mississippi">Mississippi</option>
+                <option value="Missouri">Missouri</option>
+                <option value="Montana">Montana</option>
+              </optgroup>
+                <optgroup label="N">
+                <option value="Nebraska">Nebraska</option>
+                <option value="Nevada">Nevada</option>
+                <option value="New_Hampshire">New Hampshire</option>
+                <option value="New_Jersey">New Jersey</option>
+                <option value="New_Mexico">New Mexico</option>
+                <option value="New_York">New York</option>
+                <option value="North_Carolina">North Carolina</option>
+                <option value="North_Dakota">North Dakota</option>
+              </optgroup>
+                <optgroup label="O">
+                <option value="Ohio">Ohio</option>
+                <option value="Oklahoma">Oklahoma</option>
+                <option value="Oregon">Oregon</option>
+              </optgroup>
+                <optgroup label="P">
+                <option value="Pensylvannia">Pennsylvannia</option>
+              </optgroup>
+                <optgroup label="R">
+                <option value="Rhode_Island">Rhode Island</option>
+              </optgroup>
+                <optgroup label="S">
+                <option value="South_Carolina">South Carolina</option>
+                <option value="South_Dakota">South Dakota</option>
+              </optgroup>
+                <optgroup label="T">
+                <option value="Tennessee">Tennessee</option>
+                <option value="Texas">Texas</option>
+              </optgroup>
+                <optgroup label="U">
+                <option value="Utah">Utah</option>
+              </optgroup>
+                <optgroup label="V">
+                <option value="Vermont">Vermont</option>
+                <option value="Virginia">Virginia</option>
+              </optgroup>
+                <optgroup label="W">
+                <option value="Washington">Washington</option>
+                <option value="West_Virginia">West Virginia</option>
+                <option value="Wisconsin">Wisconsin</option>
+                <option value="Wyoming">Wyoming</option>
+                <optgroup>
+              </select>
+          </li>
+          <li>
+            <label for "zip">Zip Code</label>
+            <input type="text" id="zip" name="user_zip" placeholder="For our holiday card list">
+          </li>
+        </ul>
+      </fieldset>
+      <hr class="hrThree">
+      <fieldset>
+        <legend>Newsletter</legend>
+        <p class="news">Select the newsletters you would like to receive:</p>
+        <div class="check"><input type="checkbox" id="html_news" value="newsletter_html" name="user_newsletter"><label for="html_news">HTML News</label>
+        <input type="checkbox" id="css_news" value="newsletter_css" name="user_newsletter"><label for="css_news">CSS News</label>
+        <input type="checkbox" id="javascript_news" value="newsletter_javascript" name="user_newsletter"><label for="javascript_news">Javascript News</label>
+        <p class="news">Newsletter format:</p>
+        <input type="radio" id="html" value="format_html" name="user_format"><label for="html">HTML</label>
+        <input type="radio" id="plain" value="format_plain" name="user_format"><label for="plain">Plain text</label></div>
+        <label for"topics">Other topics you'd like to hear about:</labels>
+        <textarea id="topics" name="user_ideas"placeholder="Preferably web related but go ahead, tell us what's on your mind."></textarea>
+        <button type="submit">Sign Up</button>
+      </fieldset>
+
+    </form>
+    <footer>
+      <p>Copyright &copy The Code Review</p>
+    </footer>
+
+  </body>
+</html>
