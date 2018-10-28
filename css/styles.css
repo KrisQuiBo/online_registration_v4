@@ -20,7 +20,7 @@ h1 {
   background-color: #c26558;
   margin: auto;
   padding: 25px;
-  width: 400px;
+  width: 100%;
   text-transform: uppercase;
 }
 
@@ -36,28 +36,29 @@ color: #868686;
 }
 
 p.news {
-margin: 20px 0 10px 0;
+margin-bottom: 15px;
 }
 
 .hrOne {
   border: 5px solid #868686;
-  width: 450px;
+  width: 480px;
+  margin: 0 auto;
 }
 
 .hrTwo {
   border: 2px solid #c26558;
   width: 450px;
-  margin-bottom: 25px;
+  margin: 4px auto;
 }
 
 .hrThree {
   border: 1px solid #c26558;
-  width: 80%;
+  width: 90%;
 }
 
 /*--form--*/
 form {
-  margin: 5px auto;
+  margin: 25px auto;
   border-radius: 5px;
   border: 1px solid #c26558;
   width: 450px;
@@ -84,23 +85,11 @@ li {
 
 legend {
 padding-top: 30px;
-padding-bottom: 10px;
-font-size: 1.7em;
+padding-bottom: 20px;
+font-size: 1.5em;
 color: #878787;
 font-weight: 800;
 }
-/* input[placeholder="Required"] {
-  text-align: right;
-  opacity: 0.5;
-  font-style: italic;
-  font-size: .7em;
-}
-input[placeholder="Just in case"] {
-  text-align: right;
-  opacity: 0.5;
-  font-style: italic;
-  font-size: .7em;
-} */
 
 input:enabled::placeholder {
   text-align: right;
@@ -119,10 +108,15 @@ textarea {
   min-width: 400px;
   padding-top: 15px;
 }
-
+textarea:enabled::placeholder {
+  text-align: right;
+  opacity: 0.7;
+  font-size: .8em;
+  color: #868686;
+  font-style: italic;
+}
 .check {
-  /* vertical-align: top; */
-  padding: 5px 10px 10px 0;
+  padding: 5px 10px 10px 10px;
   margin: 0 5px 5px 0;
 }
 
@@ -130,6 +124,9 @@ input[type="checkbox"],
 input[type="radio"] {
   float: left;
   margin-right: 10px;
+}
+.format {
+  margin-top: 25px;
 }
 
 input:checked {
@@ -184,9 +181,13 @@ textarea:focus {
   border: 1px solid burlywood;
   background-color:#f6f2f7;
 }
+#zip {
+  width: 50%;
+}
 footer {
   font-size: .8em;
   opacity: .6;
+
 }
 /*--Media Query--*/
 @media (min-width: 768px) {
@@ -219,5 +220,8 @@ footer {
 
   label {
     flex: 1 200px;
+  }
+  #zip {
+    width: 100%;
   }
 }
