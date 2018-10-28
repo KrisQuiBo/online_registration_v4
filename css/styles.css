@@ -90,8 +90,14 @@ font-size: 1.5em;
 color: #878787;
 font-weight: 800;
 }
-
-input:enabled::placeholder {
+input[name="user_zip"]::placeholder {
+  text-align: left;
+  opacity: 0.7;
+  font-size: .8em;
+  color: #868686;
+  font-style: italic;
+}
+input::placeholder {
   text-align: right;
   opacity: 0.7;
   font-size: .8em;
@@ -181,6 +187,13 @@ textarea:focus {
   border: 1px solid burlywood;
   background-color:#f6f2f7;
 }
+input[type="checkbox"]:checked + label {
+    font-weight: bold;
+}
+
+input[type="radio"]:checked + label {
+    font-weight: bold;
+}
 #zip {
   width: 50%;
 }
@@ -221,7 +234,7 @@ footer {
   label {
     flex: 1 200px;
   }
-  #zip {
-    width: 100%;
+  li #zip {
+    max-width: 70%;
   }
 }
