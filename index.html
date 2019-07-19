@@ -6,15 +6,19 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans:400,700&display=swap" rel="stylesheet">
     <title>The Code Review</title>
   </head>
   <body>
 
-      <h1>The Code Review</h1>
-      <h2>Signup for our newsletter</h2>
-      <p class="intro">Get the latest news on how your code is doing right in your inbox</p>
-      <hr class="hrOne">
-      <hr class="hrTwo">
+
+      <h1 id="top">The Code Review</h1>
+      <div class="intro-info">
+        <h2 class="signup">Sign up for our newsletter</h2>
+        <p class="intro">Get the latest news on how your code is doing delivered to your inbox</p>
+      </div>
+      <div class="angle-hr"></div>
+
 
     <form action="index.html" method="post">
       <fieldset>
@@ -26,7 +30,7 @@
             </li>
             <li>
               <label for="email">Email Address</label>
-              <input type="text" id="email" name="user_email" placeholder="Required" required>
+              <input type="email" id="email" name="user_email" placeholder="Required" required>
             </li>
             <li>
               <label for="phone">Phone Number</label>
@@ -139,7 +143,7 @@
           </li>
         </ul>
       </fieldset>
-      <hr class="hrThree">
+      <div class="angle-hr hrThree"></div>
       <fieldset>
         <legend>Newsletter</legend>
         <p class="news">Select the newsletters you would like to receive:</p>
@@ -156,7 +160,9 @@
 
     </form>
     <footer>
+      <a class="footer" href="#top">^</a>
       <p>Copyright &copy;The Code Review</p>
+
     </footer>
 
   </body>
